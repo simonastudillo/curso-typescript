@@ -2,7 +2,7 @@
 (() => {
     let isSuperman = true;
     let isBatman = false;
-    isSuperman = true && false; // false;
+    isSuperman = true && false;
     isSuperman = (isBatman);
     console.log({ isSuperman });
     console.log({ isBatman });

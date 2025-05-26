@@ -4,6 +4,6 @@
         return `${firstName} ${restArgs.join(' ')}`;
     };
     const superman = fullName('Clark', 'Joseph', 'Kent', 'Herrera');
-    console.log({ superman }); // Clark Joseph Kent
+    console.log({ superman });
 })();
 //# sourceMappingURL=args-rest.js.map

@@ -10,14 +10,6 @@
         age: 60,
         powers: ['Súper velocidad'],
     };
-    // flash = {
-    //    name: 'Clark Kent',
-    //    // age: 60,
-    //    powers: ['Súper fuerza', 'Volar'],
-    //    getName() {
-    //       return this.name;
-    //    }
-    // }
     console.log(flash);
 })();
 //# sourceMappingURL=objects.js.map
