@@ -10,3 +10,4 @@
         console.log(villian.toUpperCase());
     });
 })();
+//# sourceMappingURL=arrays.js.map

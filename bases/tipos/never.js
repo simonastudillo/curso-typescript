@@ -9,3 +9,4 @@
     error('Auxilio!');
     console.log('Nunca se ejecuta');
 })();
+//# sourceMappingURL=never.js.map

@@ -78,3 +78,5 @@ let mystique: (charlesType | apocalipsisType);
 
 mystique = charles;
 mystique = apocalipsis;
+
+console.log(mystique);
