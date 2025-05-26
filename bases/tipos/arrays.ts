@@ -14,4 +14,9 @@
       console.log(villian.toUpperCase());
    });
 
+   numbers.forEach(villian => {
+      console.log(villian);
+   });
+
+
 })();
