@@ -34,4 +34,13 @@
    }
 
    printAvenger(avengers);
-})
+
+
+   // Desestructuración de arreglos
+   const avengerArray: [string, boolean, number] = ['Cap. América', true, 150.15];
+   // const ironman = avengerArray[1];
+   // console.log(ironman);
+   const [capitan, ironman, seriaUnNumero] = avengerArray;
+   console.log(ironman);
+   console.log('ironman');
+}) 

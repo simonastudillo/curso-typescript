@@ -30,6 +30,10 @@ var __rest = (this && this.__rest) || function (s, e) {
         console.log(resto);
     };
     printAvenger(avengers);
+    const avengerArray = ['Cap. América', true, 150.15];
+    const [capitan, ironman, seriaUnNumero] = avengerArray;
+    console.log(ironman);
+    console.log('ironman');
 });
 (() => {
     const NOMBRE = 'Fernando';
