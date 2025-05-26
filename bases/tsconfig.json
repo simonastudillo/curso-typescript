@@ -106,7 +106,7 @@
       "node_modules/",
       "node_modules2/",
    ],
-   // "include": [
-   //    "./*.ts"
-   // ]
+   "include": [
+      "ES6"
+   ]
 }
