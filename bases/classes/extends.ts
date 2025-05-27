@@ -34,12 +34,26 @@
          return `Xmen: ${super.getFullName()}`;
       }
 
+      get fullName(): string {
+         return `${this.name} - ${this.realName}`;
+      }
+
+      set fullName(name: string) {
+         if (name.length < 3) {
+            throw new Error('El nombre debe tener al menos 3 caracteres');
+         }
+         this.name = name;
+      }
+
    }
 
    const wolverine = new Xmen('Wolverine', 'Logan', true);
 
    console.log(wolverine);
    console.log(wolverine.getFullNameDesdeXmen());
+   console.log(wolverine.fullName);
+   wolverine.fullName = 'Wolverine!!!';
+   console.log(wolverine.fullName);
 
    const nuevoAvenger = new Avenger('Ironman', 'Tony Stark');
    console.log(nuevoAvenger);
