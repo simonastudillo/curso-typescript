@@ -8,6 +8,6 @@
         }
     }
     Avenger.avgAge = 35;
-    const antman = new Avenger('Antman', 'Capitan');
+    const antman = new Avenger('Antman', 'Capitan', 'Scott Lang');
 })();
 //# sourceMappingURL=main.js.map
