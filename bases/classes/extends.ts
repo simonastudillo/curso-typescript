@@ -49,14 +49,14 @@
 
    const wolverine = new Xmen('Wolverine', 'Logan', true);
 
-   console.log(wolverine);
-   console.log(wolverine.getFullNameDesdeXmen());
-   console.log(wolverine.fullName);
+   // console.log(wolverine);
+   // console.log(wolverine.getFullNameDesdeXmen());
+   // console.log(wolverine.fullName);
    wolverine.fullName = 'Wolverine!!!';
-   console.log(wolverine.fullName);
+   // console.log(wolverine.fullName);
 
    const nuevoAvenger = new Avenger('Ironman', 'Tony Stark');
-   console.log(nuevoAvenger);
+   // console.log(nuevoAvenger);
    // console.log(nuevoAvenger.getFullName()); // Error: getFullName is private in Avenger class
 
 })();
