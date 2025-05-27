@@ -36,6 +36,28 @@ var __rest = (this && this.__rest) || function (s, e) {
     console.log('ironman');
 });
 (() => {
+    const ironman = {
+        name: 'Ironman',
+        weapon: 'Armored Suit'
+    };
+    const captainAmerica = {
+        name: 'Capitán América',
+        weapon: 'Escudo'
+    };
+    const thor = {
+        name: 'Thor',
+        weapon: 'Mjolnir'
+    };
+    const avengers = [ironman, captainAmerica, thor];
+    for (let index = 0; index < avengers.length; index++) {
+        const avenger = avengers[index];
+        console.log(avenger.name, avenger.weapon);
+    }
+    for (const avenger of avengers) {
+        console.log(avenger);
+    }
+})();
+(() => {
     const NOMBRE = 'Fernando';
     const heroe = {
         a: 1,
