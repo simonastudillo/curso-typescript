@@ -4,7 +4,6 @@
         constructor(name, realName) {
             this.name = name;
             this.realName = realName;
-            console.log('Constructor Mutant llamado');
         }
     }
     class Xmen extends Mutant {
@@ -18,14 +17,10 @@
         }
     }
     const wolverine = new Xmen('Wolverine', 'Logan');
-    console.log(wolverine.salvarMundo());
     const magneto = new Villain('Magneto', 'Max Eisenhardt');
-    console.log(magneto.conquistarMundo());
     const printName = (character) => {
         console.log(`Nombre: ${character.name}`);
     };
-    printName(wolverine);
-    printName(magneto);
 })();
 (() => {
     class Avenger {
@@ -76,5 +71,26 @@
     const wolverine = new Xmen('Wolverine', 'Logan', true);
     wolverine.fullName = 'Wolverine!!!';
     const nuevoAvenger = new Avenger('Ironman', 'Tony Stark');
+})();
+(() => {
+    class Apocalipsis {
+        constructor(name) {
+            this.name = name;
+        }
+        static callApocalipsis() {
+            if (!Apocalipsis.instance) {
+                Apocalipsis.instance = new Apocalipsis('Soy Apocalipsis');
+            }
+            return Apocalipsis.instance;
+        }
+        changeName(newName) {
+            this.name = newName;
+        }
+    }
+    const apocalipsis1 = Apocalipsis.callApocalipsis();
+    const apocalipsis2 = Apocalipsis.callApocalipsis();
+    const apocalipsis3 = Apocalipsis.callApocalipsis();
+    apocalipsis1.changeName('Soy Apocalipsis 1 modificado');
+    console.log(apocalipsis1, apocalipsis2, apocalipsis3);
 })();
 //# sourceMappingURL=main.js.map
