@@ -21,6 +21,10 @@
             id: 1,
             zip: '12345',
             city: 'New York'
+        },
+        getFullAddress(id) {
+            var _a, _b;
+            return `${(_a = this.address) === null || _a === void 0 ? void 0 : _a.city}, ${(_b = this.address) === null || _b === void 0 ? void 0 : _b.zip}`;
         }
     };
     const client2 = {
@@ -30,6 +34,10 @@
             id: 2,
             zip: '54321',
             city: 'Los Angeles'
+        },
+        getFullAddress(id) {
+            var _a, _b;
+            return `${(_a = this.address) === null || _a === void 0 ? void 0 : _a.city}, ${(_b = this.address) === null || _b === void 0 ? void 0 : _b.zip}`;
         }
     };
 })();

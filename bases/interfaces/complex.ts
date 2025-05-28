@@ -10,6 +10,7 @@
       name: string;
       age?: number;
       address?: Address;
+      getFullAddress(id: string): string;
    }
 
    const client: Client = {
@@ -19,6 +20,9 @@
          id: 1,
          zip: '12345',
          city: 'New York'
+      },
+      getFullAddress(id: string): string {
+         return `${this.address?.city}, ${this.address?.zip}`;
       }
    }
 
@@ -29,6 +33,9 @@
          id: 2,
          zip: '54321',
          city: 'Los Angeles'
+      },
+      getFullAddress(id: string): string {
+         return `${this.address?.city}, ${this.address?.zip}`;
       }
    }
 
