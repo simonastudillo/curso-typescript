@@ -1,84 +1,51 @@
-(() => {
+// Crear interfaces
 
-   // Objetos
+// Cree una interfaz para validar el auto (el valor enviado por parametro)
+const conducirBatimovil = ( auto ):void => {
+  auto.encender = true;
+  auto.velocidadMaxima = 100;
+  auto.acelear();
+}
 
-   type heroCar = {
-      carroceria: string;
-      modelo: string;
-      antibalas: boolean;
-      pasajeros: number;
-      disparar?: () => void;
-   }
+const batimovil = {
+  encender:false,
+  velocidadMaxima:0,
+  acelear(){
+    console.log("...... gogogo!!!");
+  }
+}
 
-   const batimovil: heroCar = {
-      carroceria: "Negra",
-      modelo: "6x6",
-      antibalas: true,
-      pasajeros: 4
-   };
+// Cree una interfaz con que permita utilzar el siguiente objeto
+// utilizando propiedades opcionales
 
-   const bumblebee: heroCar = {
-      carroceria: "Amarillo con negro",
-      modelo: "4x2",
-      antibalas: true,
-      pasajeros: 4,
-      disparar() { // El metodo disparar es opcional
-         console.log("Disparando");
-      }
-   };
+const guason = {
+  reir: true,
+  comer:true,
+  llorar:false
+}
 
-
-   // Villanos debe de ser un arreglo de objetos personalizados
-
-   type villian = {
-      nombre: string;
-      edad: number | undefined;
-      mutante: boolean;
-   }
+const reir = ( guason ):void => {
+  if( guason.reir ){
+    console.log("JAJAJAJA");
+  }
+}
 
 
-   const villanos: villian[] = [{
-      nombre: "Lex Luthor",
-      edad: 54,
-      mutante: false
-   }, {
-      nombre: "Erik Magnus Lehnsherr",
-      edad: 49,
-      mutante: true
-   }, {
-      nombre: "James Logan",
-      edad: undefined,
-      mutante: true
-   }];
+// Cree una interfaz para la siguiente funcion
 
-   // Multiples tipos
-   // cree dos tipos, uno para charles y otro para apocalipsis
+const ciudadGotica = ( ciudadanos:string[] ):number => {
+  return ciudadanos.length;
+}
 
-   type charlesType = {
-      poder: string;
-      estatura: number;
-   }
+// Cree una interfaz que obligue crear una clase
+// con las siguientes propiedades y metodos
 
-   const charles = {
-      poder: "psiquico",
-      estatura: 1.78
-   };
-
-   type apocalipsisType = {
-      lider: boolean;
-      miembros: string[];
-   }
-
-   const apocalipsis = {
-      lider: true,
-      miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
-   }
-
-   // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-   let mystique: (charlesType | apocalipsisType);
-
-   mystique = charles;
-   mystique = apocalipsis;
-
-   console.log(mystique);
-})();
+/*
+  propiedades:
+    - nombre
+    - edad
+    - sexo
+    - estadoCivil
+    - imprimirBio(): void // en consola una breve descripcion.
+*/
+class Persona {}
