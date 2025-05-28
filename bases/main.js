@@ -14,6 +14,20 @@
     console.log(superman);
 })();
 (() => {
+    class Mutant {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+            this.age = 0;
+            this.name = name;
+            this.realName = realName;
+        }
+        mutantPower(id) {
+            return `${this.name} has the power of teleportation with ID: ${id}`;
+        }
+    }
+})();
+(() => {
     const client = {
         name: 'Complex Client',
         age: 30,
