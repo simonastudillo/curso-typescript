@@ -1,64 +1,13 @@
 "use strict";
-(() => {
-    let flash = {
-        name: 'Berry Allen',
-        age: 24,
-        powers: [1, 2],
+var Validations;
+(function (Validations) {
+    Validations.validateText = (text) => {
+        return (text.length > 3);
     };
-    console.log(flash);
-    let superman = {
-        name: 'Clark Kent',
-        age: 60,
-        powers: [1],
+    Validations.validateDate = (fecha) => {
+        return (!isNaN(fecha.valueOf()) === false);
     };
-    console.log(superman);
-})();
-(() => {
-    class Mutant {
-        constructor(name, realName) {
-            this.name = name;
-            this.realName = realName;
-            this.age = 0;
-            this.name = name;
-            this.realName = realName;
-        }
-        mutantPower(id) {
-            return `${this.name} has the power of teleportation with ID: ${id}`;
-        }
-    }
-})();
-(() => {
-    const client = {
-        name: 'Complex Client',
-        age: 30,
-        address: {
-            id: 1,
-            zip: '12345',
-            city: 'New York'
-        },
-        getFullAddress(id) {
-            var _a, _b;
-            return `${(_a = this.address) === null || _a === void 0 ? void 0 : _a.city}, ${(_b = this.address) === null || _b === void 0 ? void 0 : _b.zip}`;
-        }
-    };
-    const client2 = {
-        name: 'Melissa',
-        age: 25,
-        address: {
-            id: 2,
-            zip: '54321',
-            city: 'Los Angeles'
-        },
-        getFullAddress(id) {
-            var _a, _b;
-            return `${(_a = this.address) === null || _a === void 0 ? void 0 : _a.city}, ${(_b = this.address) === null || _b === void 0 ? void 0 : _b.zip}`;
-        }
-    };
-})();
-(() => {
-    let addFunction;
-    addFunction = (a, b) => {
-        return 10;
-    };
-})();
+})(Validations || (Validations = {}));
+console.log(Validations.validateText("Hello"));
+console.log(Validations.validateText("Hi"));
 //# sourceMappingURL=main.js.map
