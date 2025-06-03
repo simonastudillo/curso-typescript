@@ -1,9 +1,11 @@
-import { Hero } from "./classes/Hero";
+import { genericFunction } from "./generics/generics";
 
-// const Hero = 123;
+// printObject(123);
+// printObject(new Date());
+// printObject({ name: "Alice", age: 30 });
+// printObject("Hello, TypeScript!");
+// printObject([1, 2, 3, 4, 5]);
 
-const ironman = new Hero('Ironman', 1, 45);
-console.log(ironman);
-
-
-
+console.log(genericFunction(3.1416).toFixed(2));
+console.log(genericFunction('Hola mundo').toFixed(2));
+console.log(genericFunction(new Date()).toFixed(2));
