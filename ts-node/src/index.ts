@@ -1,4 +1,4 @@
-import { genericFunction } from "./generics/generics";
+import { genericArrowFunction } from "./generics/generics";
 
 // printObject(123);
 // printObject(new Date());
@@ -6,6 +6,6 @@ import { genericFunction } from "./generics/generics";
 // printObject("Hello, TypeScript!");
 // printObject([1, 2, 3, 4, 5]);
 
-console.log(genericFunction(3.1416).toFixed(2));
-console.log(genericFunction('Hola mundo').toFixed(2));
-console.log(genericFunction(new Date()).toFixed(2));
+console.log(genericArrowFunction(3.1416).toFixed(2));
+console.log(genericArrowFunction('Hola mundo').toUpperCase());
+console.log(genericArrowFunction(new Date()).toDateString());
