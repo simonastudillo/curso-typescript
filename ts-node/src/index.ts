@@ -1,9 +1,6 @@
-import { Hero } from "./classes/Hero";
+import { getPokemon } from "./generics/get-pokemon";
 
-// const Hero = 123;
-
-const ironman = new Hero('Ironman', 1, 45);
-console.log(ironman);
-
-
-
+getPokemon(1)
+   .then(pokemon => console.log(pokemon.name))
+   .catch(err => console.error(err))
+   .finally(() => console.log('Finished fetching Pokémon data'));
