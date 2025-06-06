@@ -1,6 +1,8 @@
-import { getPokemon } from "./generics/get-pokemon";
+import { Pokemon } from "./decorators/pokemon-class";
 
-getPokemon(1)
-   .then(pokemon => console.log(pokemon.name))
-   .catch(err => console.error(err))
-   .finally(() => console.log('Finished fetching Pokémon data'));
+
+const charmander = new Pokemon('Charmander');
+
+// (Pokemon.prototype as any).customName = 'Pikachu';
+
+charmander.savePokemonToDB(50)
